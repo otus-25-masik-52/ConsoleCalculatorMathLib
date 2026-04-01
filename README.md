@@ -24,7 +24,7 @@ A C++ header-only library for working with mathematical functions.
 
 The library supports multiple strategies for detecting integer overflow:
 
-- **MANUAL** — portable boundary checks using INT_MIN / INT_MAX
+- **MANUAL** — portable boundary checks using `INT_MIN` / `INT_MAX`
 - **BUILTIN** — compiler-specific intrinsics (if available)
 
 Availability of built-in overflow checks is determined at compile time:
