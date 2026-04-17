@@ -43,15 +43,15 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(calculator_tests
+add_executable(calculator_math_tests
   tests/calculator-math-test.cpp
 )
 
-target_link_libraries(calculator_tests
+target_link_libraries(calculator_math_tests
   PRIVATE
   calculator_math
   GTest::gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(calculator_tests)
+gtest_discover_tests(calculator_math_tests)
